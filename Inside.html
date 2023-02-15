@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-green-400 to-red-500">
+    <header>
+        <h1 class="text-5xl w-1/2 mx-auto mb-20 mt-5">Welcome to <span class="text-[#701a75] text-semibold">Bap Er Bank!!</span></h1>
+    </header>
+    <main class="w-9/12 mx-auto">
+        <section class="grid grid-cols-3 gap-4 mb-8 ">
+            <div class="bg-green-400 p-3 rounded-2xl">
+                <h1 class="text-2xl text-white">Deposite</h1>
+                <h1  class="text-5xl text-white">$<span id="depostieBalance">00</span></h1>
+            </div>
+            <div class="bg-red-600 p-3 rounded-2xl">
+                <h1 class="text-2xl text-white">Widthrow</h1>
+                <h1  class="text-5xl text-white ">$<span id="widthrowAmount">00</span></h1>
+            </div>
+            <div class="bg-green-800 p-3 rounded-2xl">
+                <h1 class="text-2xl text-white">Balance</h1>
+                <h1  class="text-5xl text-white">$<span id="MyBalance">1240</span></h1>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 gap-4">
+            <div class="bg-green-800 p-12 rounded">
+                <h1 class="text-2xl text-white">Plase Deposite</h1>
+                <input id="deposite-No" class="block w-9/12 mt-3 mb-3" type="text">
+                <button id="deposite-btn" class="text-white border p-2 rounded bg-orange-800 ">Deposite</button>
+            </div>
+            <div class="bg-red-600 p-12 rounded">
+                <h1 class="text-2xl text-white">Plase Widthrow</h1>
+                <input id="plz-widthrow" class="block w-9/12 mt-3 mb-3" type="text">
+                <button id="btn-widthrow" class="text-white border p-2 rounded bg-orange-800 ">Widthrow</button>
+            </div>
+
+        </section>
+    </main>
+    <script src="Deposite.js"></script>
+    <script src="widthrow.js"></script>
+</body>
+</html>
